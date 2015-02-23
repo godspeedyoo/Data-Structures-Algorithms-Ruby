@@ -1,1 +1,3 @@
-# Ruby Data Structures
+# Introduction
+
+A repo to practice data structures & algorithms in Ruby
