@@ -24,5 +24,19 @@
 
 input = "5\n0 0 1 2 1"
 
-def
+def lonelyinteger(input)
+  print input
+  print "1"
+  found = []
+
+  array.each do |i|
+    if found[i] == nil
+      found[i] = 1
+    elsif found[i] == 1
+      found.delete(i)
+    end
+  end
+
+  puts found.first
+end
 
