@@ -22,15 +22,13 @@
 # Output(stdout)
 # 2
 
-input = "5\n0 0 1 2 1 3 4 3 4"
-
 def lonelyinteger(array)
   # Get the list of integers in an array
-  list = array.split[1..-1]
-  list.map! {|num| num.to_i }
+  # array = array.split(/\s/)[1..-1]
+  # array.map! {|num| num.to_i }
 
   found = []
-  list.each do |i|
+  array.each do |i|
     if found[i] == nil
       # Set found[i] to i
       found[i] = i
@@ -40,8 +38,16 @@ def lonelyinteger(array)
     end
   end
   found.delete(nil)
-  p found.first
+  return found.first
 end
 
-lonelyinteger(input)
+# Test Case 1: Enter input from keyboard
+a = gets.strip.to_i
+b = gets.strip.split(" ").map! {|i| i.to_i}
+print lonelyinteger(b)
+puts
+
+# Test Case 2: Given data set
+input = "9\n4 9 95 93 57 4 57 93 9"
+# p lonelyinteger(input) == 95
 
