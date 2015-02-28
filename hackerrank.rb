@@ -28,25 +28,19 @@ def lonelyinteger(array)
   # Get the list of integers in an array
   list = array.split[1..-1]
   list.map! {|num| num.to_i }
-  p list
 
   found = []
-
   list.each do |i|
     if found[i] == nil
-      p found
+      # Set found[i] to i
       found[i] = i
-      p found
-      p "----"
     elsif found[i] == i
-      p found
-      found.delete_at(i)
-      p found
-      p "----"
+      # Set nil if pairs exist
+      found[i] = nil
     end
   end
-  found.map! {|num| found.delete(num) if num.nil?}
-  p found
+  found.delete(nil)
+  p found.first
 end
 
 lonelyinteger(input)
