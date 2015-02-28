@@ -22,21 +22,32 @@
 # Output(stdout)
 # 2
 
-input = "5\n0 0 1 2 1"
+input = "5\n0 0 1 2 1 3 4 3 4"
 
-def lonelyinteger(input)
-  print input
-  print "1"
+def lonelyinteger(array)
+  # Get the list of integers in an array
+  list = array.split[1..-1]
+  list.map! {|num| num.to_i }
+  p list
+
   found = []
 
-  array.each do |i|
+  list.each do |i|
     if found[i] == nil
-      found[i] = 1
-    elsif found[i] == 1
-      found.delete(i)
+      p found
+      found[i] = i
+      p found
+      p "----"
+    elsif found[i] == i
+      p found
+      found.delete_at(i)
+      p found
+      p "----"
     end
   end
-
-  puts found.first
+  found.map! {|num| found.delete(num) if num.nil?}
+  p found
 end
+
+lonelyinteger(input)
 
