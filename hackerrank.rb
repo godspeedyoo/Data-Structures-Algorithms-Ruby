@@ -22,6 +22,6 @@
 # Output(stdout)
 # 2
 
-input = 5\n 0 0 1 2 1
+input = "5\n0 0 1 2 1"
 
 print input
