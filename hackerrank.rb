@@ -24,4 +24,5 @@
 
 input = "5\n0 0 1 2 1"
 
-print input
+def
+
