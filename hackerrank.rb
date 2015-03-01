@@ -23,6 +23,7 @@
 # 2
 
 def lonelyinteger(array)
+  # For test case 1
   # Get the list of integers in an array
   # array = array.split(/\s/)[1..-1]
   # array.map! {|num| num.to_i }
