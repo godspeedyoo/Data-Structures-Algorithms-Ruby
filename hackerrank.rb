@@ -42,8 +42,12 @@ def lonelyinteger(array)
 end
 
 # Test Case 1: Enter input from keyboard
+puts "# There are N integers in an array A. All but one integer occur in pairs. Your task is to find out the number that occurs only once."
+puts "Please enter the total # of integers (should be odd):"
 a = gets.strip.to_i
+puts "Please enter integers 1 by 1 with blankspace:"
 b = gets.strip.split(" ").map! {|i| i.to_i}
+puts "This is the number that is not in pair: "
 print lonelyinteger(b)
 puts
 
