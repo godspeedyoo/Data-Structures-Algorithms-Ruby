@@ -1,7 +1,10 @@
-# Write a program that prints (to STDOUT) the numbers from 1 to 100.
+# Write a program that prints (to STDOUT) the numbers from 1 to N.
 # But for multiples of three print "Fizz" instead of the number
 # And for the multiples of five print "Buzz".
 # For numbers which are multiples of both three and five print "FizzBuzz".
+
+# Time Complexity: O(n)
+# Space Complexity: O(n)
 
 def FizzBuzz(num)
     (1..num).each do |i|
