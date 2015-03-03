@@ -14,5 +14,10 @@
 #                Fibonacci(n-1) + Fibonacci(n-2)  , n > 2
 
 ##### Test Case
+
+def fibonacci(num)
+
+end
+
 fibonacci(3) == 1
 fibonacci(7) == 8
