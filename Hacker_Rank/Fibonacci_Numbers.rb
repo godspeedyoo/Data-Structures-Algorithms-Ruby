@@ -36,8 +36,25 @@ def fibonacci(nth_fib)
 
 
   # 2) Using Iteration
+  if nth_fib == 1
+    return 0
+  elsif nth_fib == 2
+    return 1
+  elsif nth_fib > 2
+    first_num = 0
+    second_num = 1
+    i = 0
 
-
+    while i < nth_fib
+      fib_num = first_num + second_num
+      first_num = fib_num
+      second_num = first_num
+      i += 1
+    end
+    print fib_num
+  else
+    return "Please enter a positive number"
+  end
 end
 
 ##### Test Case
@@ -45,4 +62,3 @@ puts fibonacci(2) == 1
 puts fibonacci(7) == 8
 puts fibonacci(10) == 34
 puts fibonacci(-1) == "Please enter a positive number!"
-puts fibonacci(40)
