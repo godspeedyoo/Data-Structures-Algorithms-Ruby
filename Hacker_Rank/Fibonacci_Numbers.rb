@@ -19,7 +19,16 @@
 ##### Output Format
 # One integer which is the N-th Fibonacci number.
 
-def fibonacci(num)
+# 1) Using Recursion
+def fibonacci(nth_fib)
+  if nth_fib == 0
+    return 0
+  elsif nth_fib == 1
+    return 1
+  else
+  end
+
+
 
 end
 
