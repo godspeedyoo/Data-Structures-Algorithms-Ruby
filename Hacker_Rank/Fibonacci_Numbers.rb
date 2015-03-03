@@ -13,11 +13,16 @@
 # Fibonacci(n) = 1 , n = 2
 #                Fibonacci(n-1) + Fibonacci(n-2)  , n > 2
 
-##### Test Case
+##### Input Format
+# One integer N.
+
+##### Output Format
+# One integer which is the N-th Fibonacci number.
 
 def fibonacci(num)
 
 end
 
+##### Test Case
 fibonacci(3) == 1
 fibonacci(7) == 8
