@@ -21,18 +21,21 @@
 ##### Output Format
 # One integer which is the N-th Fibonacci number.
 
-# 1) Using Recursion
 def fibonacci(nth_fib)
+# 1) Using Recursion - Time: O(2^n) - Space: O(n)
   if nth_fib == 1
     return 0
   elsif nth_fib == 2
     return 1
-  else
+  elsif nth_fib > 2
     return fibonacci(nth_fib - 1) + fibonacci(nth_fib - 2)
+  else
+    return "Please enter a positive number!"
   end
 end
 
 ##### Test Case
-puts fibonacci(3) == 1
+puts fibonacci(2) == 1
 puts fibonacci(7) == 8
 puts fibonacci(10) == 34
+puts fibonacci(-1) == "Please enter a positive number!"
