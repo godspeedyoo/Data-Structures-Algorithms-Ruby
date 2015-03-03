@@ -13,6 +13,8 @@
 # Fibonacci(n) = 1 , n = 2
 #                Fibonacci(n-1) + Fibonacci(n-2)  , n > 2
 
+#Sample: 0,1,1,2,3,5,8,13,21,34,55,89,144
+
 ##### Input Format
 # One integer N.
 
@@ -21,18 +23,16 @@
 
 # 1) Using Recursion
 def fibonacci(nth_fib)
-  if nth_fib == 0
+  if nth_fib == 1
     return 0
-  elsif nth_fib == 1
+  elsif nth_fib == 2
     return 1
   else
+    return fibonacci(nth_fib - 1) + fibonacci(nth_fib - 2)
   end
-
-
-
 end
 
 ##### Test Case
 puts fibonacci(3) == 1
 puts fibonacci(7) == 8
-
+puts fibonacci(10) == 34
