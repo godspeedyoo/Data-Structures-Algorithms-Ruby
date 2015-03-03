@@ -24,5 +24,6 @@ def fibonacci(num)
 end
 
 ##### Test Case
-fibonacci(3) == 1
-fibonacci(7) == 8
+puts fibonacci(3) == 1
+puts fibonacci(7) == 8
+
