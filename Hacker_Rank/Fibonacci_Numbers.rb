@@ -16,7 +16,7 @@
 #Sample: 0,1,1,2,3,5,8,13,21,34,55,89,144
 
 ##### Input Format
-# One integer N.
+# One integer N. (0 <= N < 40)
 
 ##### Output Format
 # One integer which is the N-th Fibonacci number.
@@ -39,3 +39,4 @@ puts fibonacci(2) == 1
 puts fibonacci(7) == 8
 puts fibonacci(10) == 34
 puts fibonacci(-1) == "Please enter a positive number!"
+puts fibonacci(40)
