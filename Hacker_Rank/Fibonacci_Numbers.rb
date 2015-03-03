@@ -22,7 +22,7 @@
 # One integer which is the N-th Fibonacci number.
 
 def fibonacci(nth_fib)
-  ### 1) Using Recursion - Time: O(2^n) - Space: O(n)
+  ### 1) Using Recursion - Time: O(2^n); Space: O(n)
 
   # if nth_fib == 1
   #   return 0
@@ -35,25 +35,27 @@ def fibonacci(nth_fib)
   # end
 
 
-  # 2) Using Iteration
+  # 2) Using Iteration - Time: O(n); Space: O(n)
   if nth_fib == 1
     return 0
   elsif nth_fib == 2
     return 1
   elsif nth_fib > 2
+
     first_num = 0
     second_num = 1
-    i = 0
+    i = 1
 
     while i < nth_fib
       fib_num = first_num + second_num
-      first_num = fib_num
       second_num = first_num
+      first_num = fib_num
       i += 1
     end
-    print fib_num
+    return fib_num
+
   else
-    return "Please enter a positive number"
+    return "Please enter a positive number!"
   end
 end
 
