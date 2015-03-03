@@ -1,4 +1,4 @@
-# The Fibonacci Series
+###### The Fibonacci Series
 
 # The Fibonacci series begins with 0 and 1 (which are the first and the second terms respectively). After this, every element is the sum of the preceding elements: i.e,
 
@@ -13,3 +13,6 @@
 # Fibonacci(n) = 1 , n = 2
 #                Fibonacci(n-1) + Fibonacci(n-2)  , n > 2
 
+##### Test Case
+fibonacci(3) == 1
+fibonacci(7) == 8
