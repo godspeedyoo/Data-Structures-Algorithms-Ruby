@@ -1,11 +1,11 @@
 # Data Structure in Ruby
 
-* Tree
+* Dynamic Array / Array list
+* Fixed Array
 * Graph
 * Hash Maps
-* Set
-* Array list
-* Fixed array
+* Linked list
 * Quene
 * Stack
-* Linked list
+* Set
+* Tree
