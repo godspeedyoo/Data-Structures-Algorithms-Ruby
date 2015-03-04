@@ -2,7 +2,7 @@
 
 * Tree
 * Graph
-* Maps
+* Hash Maps
 * Set
 * Array list
 * Fixed array
