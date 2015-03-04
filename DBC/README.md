@@ -1,4 +1,4 @@
-# Data Structure Notes
+# Data Structure in Ruby
 
 * Tree
 * Graph
