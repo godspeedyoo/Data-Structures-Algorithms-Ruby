@@ -12,19 +12,21 @@ function twoSum(numbers, target) {
     for (var second = 0; second < numbers.length; second++ ) {
       if (numbers[first] + numbers[second] == target) {
         result = [first, second];
+        console.log(numbers[first] + "+" + numbers[second] + "=" + target)
         return result;
       }
     }
   }
+  return "no matching"
 }
 
 // Test Case
-numbers = [2,2,11,15]
-target = 13
-console.log(numbers[twoSum(numbers,target)[0]] + numbers[twoSum(numbers,target)[1]] == target)
-console.log(numbers[twoSum(numbers,target)[0]] + "+" + numbers[twoSum(numbers,target)[1]] + "=" + target)
+numbers = [2,4,11,15]
+target = 19
+console.log(twoSum(numbers,target))
+
+console.log("---")
 
 numbers = [3,15,37,22]
-target = 25
-console.log(numbers[twoSum(numbers,target)[0]] + numbers[twoSum(numbers,target)[1]] == target)
-console.log(numbers[twoSum(numbers,target)[0]] + "+" + numbers[twoSum(numbers,target)[1]] + "=" + target)
+target = 100
+console.log(twoSum(numbers,target))
