@@ -36,6 +36,7 @@ def fibonacci(nth_fib)
 
 
   # 2) Using Iteration - Time: O(n); Space: O(n)
+
   if nth_fib == 1
     return 0
   elsif nth_fib == 2
@@ -64,3 +65,4 @@ puts fibonacci(2) == 1
 puts fibonacci(7) == 8
 puts fibonacci(10) == 34
 puts fibonacci(-1) == "Please enter a positive number!"
+# puts fibonacci(50)
