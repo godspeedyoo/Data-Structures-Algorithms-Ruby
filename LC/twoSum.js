@@ -8,21 +8,19 @@
 // Output: index1=1, index2=2
 
 function twoSum(numbers, target) {
-  for (var index = 0; index < numbers.length; index++) {
-    var j = 0;
-    while (j < numbers.length) {
-      if (numbers[index] + numbers[j] == target) {
-        result = [index, j];
+  for (var first = 0; first < numbers.length; first++) {
+    for (var second = 0; second < numbers.length; second++ ) {
+      if (numbers[first] + numbers[second] == target) {
+        result = [first, second];
         return result;
       }
-      j++;
     }
   }
 }
 
 // Test Case
 numbers = [2,2,11,15]
-target = 4
+target = 13
 console.log(numbers[twoSum(numbers,target)[0]] + numbers[twoSum(numbers,target)[1]] == target)
 console.log(numbers[twoSum(numbers,target)[0]] + "+" + numbers[twoSum(numbers,target)[1]] + "=" + target)
 
