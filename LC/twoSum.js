@@ -6,3 +6,4 @@
 
 // Input: numbers={2, 7, 11, 15}, target=9
 // Output: index1=1, index2=2
+
