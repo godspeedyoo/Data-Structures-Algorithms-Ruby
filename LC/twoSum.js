@@ -8,6 +8,8 @@
 // Output: index1=1, index2=2
 
 function twoSum(numbers, target) {
+  // #1: Brute force, time: O(n^2), Space: O(1)
+
   for (var first = 0; first < numbers.length; first++) {
     for (var second = 0; second < numbers.length; second++ ) {
       if (numbers[first] + numbers[second] == target) {
