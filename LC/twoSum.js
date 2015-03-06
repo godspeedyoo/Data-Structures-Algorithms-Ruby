@@ -20,6 +20,8 @@ function twoSum(numbers, target) {
     }
   }
   return "No two sum solution"
+
+  // #2: HashMap, time: O(n), Space: O(n)
 }
 
 // Test Case
