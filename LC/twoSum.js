@@ -7,9 +7,32 @@
 // Input: numbers={2, 7, 11, 15}, target=9
 // Output: index1=1, index2=2
 
-function twoSum() {
+function twoSum(numbers, target) {
+  // console.log(numbers.length)
+
+  for (var index = 0; index < numbers.length; index++) {
+    // console.log(index);
+    var j = 0;
+    while (j < numbers.length) {
+      if (numbers[index] + numbers[j] == target) {
+        result = [index, j];
+        // console.log(result);
+        return result;
+      }
+      j++;
+    }
+  }
+
 
 }
 
 // Test Case
-console.log(twoSum([2,7,11,15], 9) === [0,1])
+numbers = [2,7,11,15]
+target = 9
+console.log(numbers[twoSum(numbers,target)[0]] + numbers[twoSum(numbers,target)[1]] == target)
+console.log(numbers[twoSum(numbers,target)[0]] + "+" + numbers[twoSum(numbers,target)[1]] + "=" + target)
+
+numbers = [3,15,37,22]
+target = 37
+console.log(numbers[twoSum(numbers,target)[0]] + numbers[twoSum(numbers,target)[1]] == target)
+console.log(numbers[twoSum(numbers,target)[0]] + "+" + numbers[twoSum(numbers,target)[1]] + "=" + target)
