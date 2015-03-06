@@ -19,7 +19,7 @@ function twoSum(numbers, target) {
       }
     }
   }
-  return "no matching"
+  return "No two sum solution"
 }
 
 // Test Case
